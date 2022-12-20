@@ -87,13 +87,13 @@
                                         </ul>
                                     </li>                                        
                                     <li class="nav-item">
-                                        <NuxtLink to="/">About Us</NuxtLink>
+                                        <NuxtLink to="/about">About Us</NuxtLink>
                                     </li> 
                                     <li class="nav-item">
-                                        <NuxtLink to="/">Case Studies</NuxtLink>
+                                        <NuxtLink to="/projects">Case Studies</NuxtLink>
                                     </li>                            
                                     <li class="nav-item">
-                                        <NuxtLink to="/">Contact</NuxtLink>
+                                        <NuxtLink to="/contact">Contact</NuxtLink>
                                     </li>                                                                                           
                                 </ul>
                             </div>
