@@ -8,6 +8,7 @@
             subheadline="A fantastic range of services awaits you."
         >
         </header-inner>
+        <OurServices/>
         <Technology/>
         <Testimonial/>
         <Footer/>
@@ -17,6 +18,7 @@
 <script>
 
 import Nav from '~/components/Nav';
+import OurServices from '~/components/Common/OurServices';
 import Technology from '~/components/Technology';
 import Testimonial from '~/components/Testimonial';
 import Footer from '~/components/Footer';
@@ -27,6 +29,7 @@ export default {
     name: 'Services',
     components: {
         Nav,
+        OurServices,
         Technology,
         Testimonial,
         Footer,

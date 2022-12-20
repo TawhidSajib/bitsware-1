@@ -1,7 +1,7 @@
 <template>
     <div class="headerinner position-relative">
-        <img :src="headerornament_1" class="position-absolute headerinner__ornament--1 d-xxl-block float" alt="Ornament">
-        <img :src="headerornament_2" class="position-absolute headerinner__ornament--2 d-xxl-block" alt="Ornament">
+        <img :src="headerornament_1" class="position-absolute headerinner__ornament--1 d-none d-lg-block float" alt="Ornament">
+        <img :src="headerornament_2" class="position-absolute headerinner__ornament--2 d-none d-lg-block" alt="Ornament">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -65,7 +65,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 @import '../../assets/scss/style.scss';
 .headerinner {
@@ -99,6 +99,25 @@ export default {
                 bottom: 0px;
             }            
         }               
+    }
+}
+
+// Media Queries
+
+$max-width: 767px;
+
+@media (max-width: $max-width) {
+    .headerinner {
+        @include padding(50px,0px,50px,0px);
+        &__block {
+            h1 {
+                @include font($base-font,30px,$font-weight-3,40px);
+                margin-bottom: 15px;
+            }
+            h2 {
+                @include font($base-font,$base-font-size,$font-weight-1,24px);
+            }
+        }
     }
 }
 
