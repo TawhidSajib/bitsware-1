@@ -4,6 +4,7 @@
 @import "button";
 @import "nav";
 @import "header";
+@import "service-single/introduction";
 @import "home/weprovide";
 @import "featuredproject";
 @import "home/whybitsware";
@@ -14,6 +15,13 @@
 @import "testimonial";
 @import "cta";
 @import "footer";
+
+body {
+	p {
+		@include font($base-font,$base-font-size,$font-weight-1,30.8px);
+		color: $black-900;
+	}
+}
 
 // ===== Scrollbar width ===== //
 ::-webkit-scrollbar {

@@ -21,16 +21,16 @@
                                 <transition name="fade">
                                     <ul v-if="isDropDownShow" class="dropdown-menu" v-click-outside="closeDropdown">
                                         <li>
-                                            <NuxtLink to="/">Software Development</NuxtLink>
+                                            <NuxtLink to="/service-single">Software Development</NuxtLink>
                                         </li>
                                         <li>
-                                            <NuxtLink to="/">Product Design</NuxtLink>
+                                            <NuxtLink to="/service-single">Product Design</NuxtLink>
                                         </li>
                                         <li>
-                                            <NuxtLink to="/">Cloud &amp; DevOps</NuxtLink>
+                                            <NuxtLink to="/service-single">Cloud &amp; DevOps</NuxtLink>
                                         </li>
                                         <li>
-                                            <NuxtLink to="/">Analytic Solutions</NuxtLink>
+                                            <NuxtLink to="/service-single">Analytic Solutions</NuxtLink>
                                         </li>                                                                        
                                     </ul>
                                 </transition>      
@@ -73,16 +73,16 @@
                                         </span>                                                                                      
                                         <ul :class="{'d-block': isMobileDropdown}" class="dropdown-menu menu__block--mobile--dropdown">
                                             <li class="nav-item">
-                                                <NuxtLink to="/">Software Development</NuxtLink>
+                                                <NuxtLink to="/service-single">Software Development</NuxtLink>
                                             </li> 
                                             <li class="nav-item">
-                                                <NuxtLink to="/">Product Design</NuxtLink>
+                                                <NuxtLink to="/service-single">Product Design</NuxtLink>
                                             </li>
                                             <li class="nav-item">
-                                                <NuxtLink to="/">Cloud &amp; DevOps</NuxtLink>
+                                                <NuxtLink to="/service-single">Cloud &amp; DevOps</NuxtLink>
                                             </li>                                  
                                             <li class="nav-item">
-                                                <NuxtLink to="/">Analytic Solutions</NuxtLink>
+                                                <NuxtLink to="/service-single">Analytic Solutions</NuxtLink>
                                             </li>                                                                                                                                                             
                                         </ul>
                                     </li>                                        
