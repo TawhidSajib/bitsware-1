@@ -9,6 +9,10 @@
         >
         </header-inner>        
         <Introduction/>
+        <TeamProcess/>
+        <Testimonial/>
+        <Cta/>
+        <Footer/>
     </section>
 </template>
 
@@ -16,6 +20,10 @@
 
 import Nav from '~/components/Nav';
 import Introduction from '~/components/ServiceSingle/Introduction';
+import TeamProcess from '~/components/Common/TeamProcess';
+import Testimonial from '~/components/Testimonial';
+import Cta from '~/components/Cta';
+import Footer from '~/components/Footer';
 import headlineFontStyle from '~/assets/svg/team-ornament.svg';
 
 export default {
@@ -23,6 +31,10 @@ export default {
     components: {
         Nav,
         Introduction,
+        TeamProcess,
+        Testimonial,
+        Cta,
+        Footer,
         "header-inner": () => import("@/components/Common/HeaderInner")
     },
     data() {

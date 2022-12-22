@@ -1,3 +1,19 @@
 .introduction {
-    @include padding(60px,0px,60px,0px);
+    @include padding(60px,0px,0px,0px);
+    &__content {
+        h3 {
+            @include font($base-font,$heading-4,$font-weight-3,33.6px);
+            margin-bottom: 24px;
+        }
+    }
+}
+
+// Media Queries
+
+$max-width: 767px;
+
+@media (max-width: $max-width) {
+    .introduction {
+        @include padding(35px,0px,0px,0px);
+    }
 }
