@@ -10,6 +10,9 @@
         </header-inner>        
         <Introduction/>
         <TeamProcess/>
+        <Statistics/>
+        <Projects/>
+        <BorderBottom/>
         <Testimonial/>
         <Cta/>
         <Footer/>
@@ -21,6 +24,9 @@
 import Nav from '~/components/Nav';
 import Introduction from '~/components/ServiceSingle/Introduction';
 import TeamProcess from '~/components/Common/TeamProcess';
+import Statistics from '~/components/Common/Statistics';
+import Projects from '~/components/Common/Projects';
+import BorderBottom from '~/components/Common/BorderBottom';
 import Testimonial from '~/components/Common/Testimonial';
 import Cta from '~/components/Common/Cta';
 import Footer from '~/components/Footer';
@@ -32,6 +38,9 @@ export default {
         Nav,
         Introduction,
         TeamProcess,
+        Statistics,
+        Projects,
+        BorderBottom,
         Testimonial,
         Cta,
         Footer,

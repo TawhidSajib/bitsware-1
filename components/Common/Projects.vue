@@ -14,7 +14,7 @@
                         titleStyle="Projects"
                         :ornaments="subheaderFontStyle"
                     ></subheadline>
-                    <h3>We make the people and interface interaction more intensive and exiting.</h3>
+                    <h3>We make the people and interface interaction more intensive and exciting.</h3>
                 </div>
             </div>             
         </div>

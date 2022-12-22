@@ -14,8 +14,10 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            justify-self: flex-start;
             img {
-                margin: -15px 5px;
+                margin: 0px 0px -45px 0px;
+                padding: 5px;
             }
         }        
     }   
@@ -50,6 +52,8 @@ $max-width-991: 991px;
             &--inner {
                 img {
                     margin: 10px 5px;
+                    width: 160px;
+                    padding: 0px;
                 }
             }
         }
@@ -71,8 +75,9 @@ $max-width: 767px;
             margin-top: 30px;
             &--inner {
                 img {
-                    width: 100px;
-                    margin: -5px 5px 10px 5px;
+                    width: 105px;
+                    margin: 5px;
+                    padding: 0px;
                 }
             }
         }       

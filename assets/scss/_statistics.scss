@@ -1,0 +1,45 @@
+.statistics {
+    padding-bottom: 80px;
+    &__left {
+        @include padding(50px,0px,50px,0px);
+        h3 {
+            @include font($base-font,30px,$font-weight-2,33.6px);
+            color: $black-1000;      
+            margin-bottom: 50px;      
+        }
+    }
+    &__right {
+        @include padding(50px,0px,50px,0px);
+        h3 {
+            @include font($base-font,30px,$font-weight-2,33.6px);
+            color: $black-1000;      
+            margin-bottom: 25px;      
+        }        
+    }
+    &__block {
+        margin-bottom: 25px;
+        &--stat {
+            width: 50%;
+            h4 {
+                @include font($base-font,$heading-3,$font-weight-3,50px);
+                color: $secondary-1;
+                margin-bottom: 8px;
+            }
+            h5 {
+                @include font($base-font,$base-font-size,$font-weight-1,$line-height-6);
+                color: $black-900;
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__technology {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-self: flex-start;
+        img {
+            margin: 0px 0px -20px 0px;
+            padding: 20px;
+        }
+    }
+}

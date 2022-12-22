@@ -81,7 +81,7 @@ export default {
 @import '../../assets/scss/style.scss';
 
 .team__process {
-    @include padding(50px,0px,50px,0px);
+    @include padding(80px,0px,80px,0px);
     h3 {
         @include font($base-font,28px,$font-weight-2,39.2px);
         color: $black-900;
