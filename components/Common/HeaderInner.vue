@@ -96,7 +96,7 @@ export default {
         .subheadlineStyle {
             img {
                 left: 0;
-                bottom: 0px;
+                bottom: 8px;
             }            
         }               
     }
