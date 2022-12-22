@@ -178,7 +178,7 @@ export default {
     opacity: 1;
 }
 .testimonial .slick-prev:before {
-    content: url(../assets/svg/testimonial-left.svg);
+    content: url(../../assets/svg/testimonial-left.svg);
 }
 .testimonial .slick-prev {
     background: #FFFFFF;
@@ -194,7 +194,7 @@ export default {
     background-color: #FFFFFF;
 }
 .testimonial .slick-next:before {
-    content: url(../assets/svg/testimonial-right.svg);
+    content: url(../../assets/svg/testimonial-right.svg);
 }
 .testimonial .slick-next {
     background: #FFFFFF;

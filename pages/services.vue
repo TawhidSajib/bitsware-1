@@ -19,8 +19,8 @@
 
 import Nav from '~/components/Nav';
 import OurServices from '~/components/Common/OurServices';
-import Technology from '~/components/Technology';
-import Testimonial from '~/components/Testimonial';
+import Technology from '~/components/Common/Technology';
+import Testimonial from '~/components/Common/Testimonial';
 import Footer from '~/components/Footer';
 
 import headlineFontStyle from '~/assets/svg/subheader-font-style.svg';

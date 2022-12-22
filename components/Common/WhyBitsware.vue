@@ -21,8 +21,8 @@
 
 <script>
 
-import WhyChoose from '~/components/WhyChoose';
-import WorkProcess from '~/components/WorkProcess';
+import WhyChoose from '~/components/Common/WhyChoose';
+import WorkProcess from '~/components/Common/WorkProcess';
 import ornament05 from '~/assets/svg/ornament-5.svg';
 import ornament06 from '~/assets/svg/ornament-6.svg';
 import connect01 from '~/assets/images/block.gif';

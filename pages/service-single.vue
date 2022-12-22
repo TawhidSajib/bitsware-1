@@ -21,8 +21,8 @@
 import Nav from '~/components/Nav';
 import Introduction from '~/components/ServiceSingle/Introduction';
 import TeamProcess from '~/components/Common/TeamProcess';
-import Testimonial from '~/components/Testimonial';
-import Cta from '~/components/Cta';
+import Testimonial from '~/components/Common/Testimonial';
+import Cta from '~/components/Common/Cta';
 import Footer from '~/components/Footer';
 import headlineFontStyle from '~/assets/svg/team-ornament.svg';
 
