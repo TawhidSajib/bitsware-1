@@ -3,7 +3,7 @@
     <Nav/>
     <Header/>
     <WeProvide/>
-    <FeaturedProjects/>  
+    <Projects/>  
     <WhyBitsware/>
     <Team/>  
     <Technology/>
@@ -18,7 +18,7 @@
 import Nav from '~/components/Nav';
 import Header from '~/components/Header';
 import WeProvide from '~/components/Common/WeProvide';
-import FeaturedProjects from '~/components/FeaturedProjects';
+import Projects from '~/components/Common/Projects';
 import WhyBitsware from '~/components/Common/WhyBitsware';
 import Team from '~/components/Common/Team';
 import Technology from '~/components/Common/Technology';
@@ -32,7 +32,7 @@ export default {
     Nav,
     Header,
     WeProvide,
-    FeaturedProjects,
+    Projects,
     WhyBitsware,
     Team,
     Technology,

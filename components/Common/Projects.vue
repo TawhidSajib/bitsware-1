@@ -22,25 +22,25 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="featured__project">
-                        <div v-for="(featureproject,i) in featured" :key="i" class="row">
+                        <div v-for="(project,i) in projects" :key="i" class="row">
                             <div class="col-lg-6">
-                                <h4>{{ featureproject.category }}</h4>
-                                <h5>{{ featureproject.description }}</h5>
-                                <NuxtLink :to="featureproject.link" class="btn-link">
+                                <h4>{{ project.category }}</h4>
+                                <h5>{{ project.description }}</h5>
+                                <NuxtLink :to="project.link" class="btn-link">
                                     <div class="d-flex align-items-center">
                                         View Project<img :src="view_project" alt="Arrow">
                                     </div>
                                 </NuxtLink>                                                                
                             </div>
                             <div class="col-lg-6">
-                                <img :src="featureproject.image" :alt="featureproject.alt" class="img-fluid">
+                                <img :src="project.image" :alt="project.alt" class="img-fluid">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row gx-0 gx-lg-5">
-                <div v-for="(subproject,i) in subfeatured" :key="i" class="col-lg-6">
+                <div v-for="(subproject,i) in subprojects" :key="i" class="col-lg-6">
                     <div class="featured__project">
                         <div class="row">
                             <div class="col-lg-12">
@@ -88,7 +88,7 @@ import subProject1 from '~/assets/svg/case02.svg';
 import subProject2 from '~/assets/svg/case03.svg';
 
 export default {
-    name: 'FeaturedProjects',
+    name: 'Projects',
     components: {     
         "subheadline": () => import("@/components/Common/Subheadline"),
     },    
@@ -103,7 +103,7 @@ export default {
             ornament_4: ornament4, 
             round_02: round02,
             subheaderFontStyle,
-            featured: [
+            projects: [
                 {
                     category: 'Branding Design',
                     description: 'Business Banking and Financial Full Website Design',
@@ -112,7 +112,7 @@ export default {
                     alt: 'Case'
                 }
             ],
-            subfeatured: [
+            subprojects: [
                 {
                     category: 'Branding Design',
                     description: 'Business Banking and Financial Full Website Design',
