@@ -1,8 +1,6 @@
 <template>
   <section>
-    <client-only>
-      <Nav/>
-    </client-only>  
+    <Nav/>
     <Header/>
     <WeProvide/>
     <Projects/>  
