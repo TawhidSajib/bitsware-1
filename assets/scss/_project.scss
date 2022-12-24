@@ -56,6 +56,9 @@
             background: linear-gradient(93.59deg, #E6FAF5 -12.1%, #FAF3E6 110.31%);
             box-shadow: 0px 10px 30px -3px rgba(9, 9, 32, 0.15);
             cursor: pointer;
+            h5 {
+                color: $secondary-1;
+            }
         } 
         &--view {
             .btn-white-no-icon {
