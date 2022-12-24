@@ -1,13 +1,13 @@
 <template>
     <div class="title">
-        <h2>
+        <h3>
             {{ title }}
             <span class="subtitle position-relative">                
                 {{ titleStyle }}
                 <img :src="ornaments" alt="Header Style" class="position-absolute d-none d-md-block">
             </span>
             {{ extraTitle }}             
-        </h2>        
+        </h3>        
     </div>
 </template>
 
@@ -43,7 +43,7 @@ export default {
 
 @import '../../assets/scss/style.scss';
 .title {
-    h2 {
+    h3 {
         @include font($base-font,$heading-2,$font-weight-3,$line-height-2);
         color: $black-1000;
         margin-bottom: 25px !important;
@@ -62,7 +62,7 @@ $max-width: 767px;
 
 @media (max-width: $max-width) {
     .title {
-        h2 {
+        h3 {
             font-size: 35px;
             line-height: 40px;
             margin-bottom: 20px !important;            
