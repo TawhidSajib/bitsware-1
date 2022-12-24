@@ -107,6 +107,7 @@ $max-width: 767px;
 
 @media (max-width: $max-width) {
     .team__process {
+        @include padding(35px,0px,0px,0px);
         h3 {
             @include font($base-font,24px,$font-weight-2,30px);      
             margin-bottom: 16px;      
