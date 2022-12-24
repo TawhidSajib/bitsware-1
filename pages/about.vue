@@ -9,6 +9,8 @@
         ></header-inner>
         <WhyBitsware/>
         <Testimonial/>
+        <BorderBottom/>
+        <Gallery/>
         <Footer/>
     </section>
 </template>
@@ -18,6 +20,8 @@
 import Nav from '~/components/Nav';
 import WhyBitsware from '~/components/Common/WhyBitsware';
 import Testimonial from '~/components/Common/Testimonial';
+import BorderBottom from '~/components/Common/BorderBottom';
+import Gallery from '~/components/Common/Gallery';
 import Footer from '~/components/Footer';
 import headlineFontStyle from '~/assets/svg/about-ornament.svg';
 
@@ -27,6 +31,8 @@ export default {
         Nav,
         WhyBitsware,
         Testimonial,
+        BorderBottom,
+        Gallery,
         Footer,
         "header-inner": () => import("@/components/Common/HeaderInner")
     },    
