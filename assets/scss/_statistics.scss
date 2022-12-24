@@ -1,7 +1,7 @@
 .statistics {
-    padding-bottom: 80px;
+    padding-bottom: 120px;
     &__left {
-        @include padding(50px,0px,50px,0px);
+        @include padding(50px,0px,0px,0px);
         h3 {
             @include font($base-font,30px,$font-weight-2,33.6px);
             color: $black-1000;      

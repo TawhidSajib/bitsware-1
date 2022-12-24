@@ -11,6 +11,7 @@
         <Introduction/>
         <TeamProcess/>
         <Statistics/>
+        <HireProcess/>
         <Projects/>
         <BorderBottom/>
         <Testimonial/>
@@ -25,6 +26,7 @@ import Nav from '~/components/Nav';
 import Introduction from '~/components/ServiceSingle/Introduction';
 import TeamProcess from '~/components/Common/TeamProcess';
 import Statistics from '~/components/Common/Statistics';
+import HireProcess from '~/components/Common/HireProcess';
 import Projects from '~/components/Common/Projects';
 import BorderBottom from '~/components/Common/BorderBottom';
 import Testimonial from '~/components/Common/Testimonial';
@@ -39,6 +41,7 @@ export default {
         Introduction,
         TeamProcess,
         Statistics,
+        HireProcess,
         Projects,
         BorderBottom,
         Testimonial,
