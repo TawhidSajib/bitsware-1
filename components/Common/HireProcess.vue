@@ -7,74 +7,69 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xl-3 col-lg-6 col-md-6 g-4">
+                <div v-for="(hireprocess,i) in hireprocesses" :key="i" class="col-xl-3 col-lg-6 col-md-6 g-4">
                     <div class="hire__process--block h-100">
                         <div class="hire__process--top d-flex align-center justify-content-between">
                             <div>
-                                <img src="~/assets/svg/requirement.svg" class="img-fluid" alt="Requirement">
+                                <img :src="hireprocess.image" class="img-fluid" :alt="hireprocess.alt">
                             </div>
                             <div>
-                                <h4>Step 01</h4>
+                                <h4>{{ hireprocess.step }}</h4>
                             </div>
                         </div>
                         <div class="hire__process--bottom">
-                            <h5>Requirement</h5>
+                            <h5>{{ hireprocess.name }}</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 g-4">
-                    <div class="hire__process--block h-100">
-                        <div class="hire__process--top d-flex align-center justify-content-between">
-                            <div>
-                                <img src="~/assets/svg/client-call.svg" class="img-fluid" alt="Client Call">
-                            </div>
-                            <div>
-                                <h4>Step 02</h4>
-                            </div>
-                        </div>
-                        <div class="hire__process--bottom">
-                            <h5>Client call</h5>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 g-4">
-                    <div class="hire__process--block h-100">
-                        <div class="hire__process--top d-flex align-center justify-content-between">
-                            <div>
-                                <img src="~/assets/svg/introduce.svg" class="img-fluid" alt="Introduce">
-                            </div>
-                            <div>
-                                <h4>Step 03</h4>
-                            </div>
-                        </div>
-                        <div class="hire__process--bottom">
-                            <h5>Introduce with developer</h5>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="col-xl-3 col-lg-6 col-md-6 g-4">
-                    <div class="hire__process--block h-100">
-                        <div class="hire__process--top d-flex align-center justify-content-between">
-                            <div>
-                                <img src="~/assets/svg/contract.svg" class="img-fluid" alt="Contract">
-                            </div>
-                            <div>
-                                <h4>Step 04</h4>
-                            </div>
-                        </div>
-                        <div class="hire__process--bottom">
-                            <h5>Sign contract</h5>
-                        </div>                        
-                    </div>
-                </div>                                                
             </div>
         </div>
     </div>
 </template>
 
 <script>
+
+import requirement from '~/assets/svg/requirement.svg';
+import clientcall from '~/assets/svg/client-call.svg';
+import introduce from '~/assets/svg/introduce.svg';
+import contract from '~/assets/svg/contract.svg';
+
 export default {
-    name: 'HireProcess'
+    name: 'HireProcess',
+    data() {
+        return {
+            requirement: requirement,
+            clientcall: clientcall,
+            introduce: introduce,
+            contract: contract,
+            hireprocesses: [
+                {
+                    name: 'Requirement',
+                    alt: 'Requirement',
+                    image: requirement,
+                    step: 'Step 01'                    
+                },
+                {
+                    name: 'Client call',
+                    alt: 'Client call',
+                    image: clientcall,
+                    step: 'Step 02'                    
+                },
+                {
+                    name: 'Introduce',
+                    alt: 'Introduce',
+                    image: introduce,
+                    step: 'Step 03'                    
+                },
+                {
+                    name: 'Contract',
+                    alt: 'Contract',
+                    image: contract,
+                    step: 'Step 04'                    
+                }                
+            ]
+        }
+    }
 }
 </script>
 
@@ -112,6 +107,36 @@ export default {
             margin-bottom: 0;
         }
     }   
+}
+
+// Media Queries: 768px - 991px
+
+$min-width-768: 768px;
+$max-width-991: 991px;
+
+@media (min-width: $min-width-768) and (max-width: $max-width-991) {
+    .hire__process {
+        @include padding(70px,0px,70px,0px);
+        margin-bottom: 70px;
+        h3 {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// Media Queries
+
+$max-width: 767px;
+
+@media (max-width: $max-width) {
+    .hire__process {
+        @include padding(35px,0px,35px,0px);
+        margin-bottom: 35px;
+        h3 {
+            @include font($base-font,35px,$font-weight-3,40px);
+            margin-bottom: 20px;
+        }
+    }
 }
 
 </style>

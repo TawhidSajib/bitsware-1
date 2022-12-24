@@ -101,6 +101,17 @@ export default {
     }
 }
 
+// Media Queries: 768px - 991px
+
+$min-width-768: 768px;
+$max-width-991: 991px;
+
+@media (min-width: $min-width-768) and (max-width: $max-width-991) {
+    .team__process {
+        @include padding(70px,0px,0px,0px);
+    }
+}
+
 // Media Queries
 
 $max-width: 767px;
