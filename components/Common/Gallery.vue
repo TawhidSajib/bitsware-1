@@ -2,6 +2,11 @@
     <div class="gallery">
         <div class="container">
             <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>Bitsware Gallery</h3>
+                </div>
+            </div>            
+            <div class="row">
                 <div class="col-lg-12">
                     <vue-masonry-wall :items="items" :options="{width: 350, padding: 10}">
                         <template v-slot:default="{item}">
