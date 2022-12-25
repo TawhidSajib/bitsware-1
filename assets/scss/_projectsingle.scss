@@ -1,0 +1,32 @@
+.project {
+    padding-bottom: 150px;
+    &__inner {
+        margin-top: 80px;
+        &--info {
+            margin-bottom: 30px;
+            h3 {
+                @include font($base-font,$base-font-size,$font-weight-2,20px);
+                letter-spacing: 0.4px;
+                color: #5A5A67;
+                margin-bottom: 10px;
+            }
+            h4 {
+                @include font($base-font,14px,$font-weight-2,17.5px);
+                letter-spacing: 0.4px;
+                color: #212833;
+                margin-bottom: 10px;
+            }            
+        }
+        &--details {
+            h2 {
+                @include font($base-font,$heading-1,$font-weight-3,67.2px);
+                color: $black-1000;
+                margin-bottom: 30px;
+            }
+            p {
+                @include font($base-font,18px,$font-weight-1,30px);
+                color: $black-900;
+            }
+        }   
+    }
+}
