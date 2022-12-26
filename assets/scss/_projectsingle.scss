@@ -4,6 +4,9 @@
         margin-top: 80px;
         &--info {
             margin-bottom: 30px;
+            .list-inline-item:not(:last-child) {
+                margin-right: 20px;
+            }
             h3 {
                 @include font($base-font,$base-font-size,$font-weight-2,20px);
                 letter-spacing: 0.4px;
@@ -42,6 +45,17 @@
                 color: $black-900;
             }
 
+        }
+        &--gallery {
+            margin-top: 70px;
+            &--img {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                }                    
+            }
         }
     }
 }

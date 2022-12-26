@@ -27,7 +27,11 @@
                                     </div>                                    
                                     <div class="project__inner--info">
                                         <h3>Technology &amp; Tools</h3>
-                                        <h4>{{ technology }}</h4>
+                                        <ul class="list-inline">
+                                            <li v-for="(technology,i) in technologies" :key="i" class="list-inline-item">
+                                                <img :src="technology.image" :alt="technology.alt">
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <div class="col-lg-9">
@@ -56,6 +60,15 @@
                                                 </div>
                                             </div>                                                
                                         </div>
+                                        <div class="project__inner--gallery">
+                                            <vue-masonry-wall :items="items" :options="{width: 400, padding: 10}">
+                                                <template v-slot:default="{item}">
+                                                    <div class="project__inner--gallery--img">
+                                                        <img :src="item.image" class="img-fluid" :alt="item.alt">
+                                                    </div>
+                                                </template>
+                                            </vue-masonry-wall>                                            
+                                        </div>
                                     </div>                                    
                                 </div>
                             </div>
@@ -70,14 +83,19 @@
 
 <script>
 
+import VueMasonryWall from "vue-masonry-wall";
+
 import Nav from '~/components/Nav';
 import Footer from '~/components/Footer';
-
 import banner from '~/assets/images/project01/01.jpg';
+import figma from '~/assets/images/project01/figma.svg';
+import nodejs from '~/assets/images/project01/nodejs.svg';
+import python from '~/assets/images/project01/python.svg';
 
 export default {
     name: 'ProjectSingle',
     components: {
+        VueMasonryWall,
         Nav,
         Footer
     },
@@ -87,7 +105,42 @@ export default {
             date: '10/05/2022',
             name: 'Creative Grow',
             category: 'Art Direction, Graphic',
-            technology: 'Figma, Node JS, Python'
+            technologies: [
+                { 
+                    image: figma,
+                    alt: 'Figma'
+                },
+                { 
+                    image: nodejs,
+                    alt: 'Node JS'
+                },
+                { 
+                    image: python,
+                    alt: 'Python'
+                }
+            ],
+            items: [
+                { 
+                    image: require('@/assets/images/project01/image01.jpg'),
+                    alt: '01'
+                },
+                { 
+                    image: require('@/assets/images/project01/image02.jpg'),
+                    alt: '02' 
+                },
+                { 
+                    image: require('@/assets/images/project01/image03.jpg'),
+                    alt: '03' 
+                },
+                { 
+                    image: require('@/assets/images/project01/image04.jpg'), 
+                    alt: '04'
+                },
+                { 
+                    image: require('@/assets/images/project01/image05.jpg'),
+                    alt: '05' 
+                }
+            ]            
         }
     }
 }
