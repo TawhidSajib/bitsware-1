@@ -46,7 +46,7 @@ export default {
     '~/assets/scss/style.scss',
     'bootstrap/dist/css/bootstrap.min.css',
     'vue-slick-carousel/dist/vue-slick-carousel.css',
-    'vue-slick-carousel/dist/vue-slick-carousel-theme.css'    
+    'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
   ],
 
   script: [
@@ -58,6 +58,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/v-lightbox.js', ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

@@ -61,13 +61,7 @@
                                             </div>                                                
                                         </div>
                                         <div class="project__inner--gallery">
-                                            <vue-masonry-wall :items="items" :options="{width: 400, padding: 10}">
-                                                <template v-slot:default="{item}">
-                                                    <div class="project__inner--gallery--img">
-                                                        <img :src="item.image" class="img-fluid" :alt="item.alt">
-                                                    </div>
-                                                </template>
-                                            </vue-masonry-wall>                                            
+                                            <lightbox :items="images"></lightbox>
                                         </div>
                                     </div>                                    
                                 </div>
@@ -83,7 +77,6 @@
 
 <script>
 
-import VueMasonryWall from "vue-masonry-wall";
 import Nav from '~/components/Nav';
 import Footer from '~/components/Footer';
 import banner from '~/assets/images/project01/01.jpg';
@@ -94,7 +87,6 @@ import python from '~/assets/images/project01/python.svg';
 export default {
     name: 'ProjectSingle',
     components: {
-        VueMasonryWall,
         Nav,
         Footer
     },
@@ -139,7 +131,15 @@ export default {
                     image: require('@/assets/images/project01/image05.jpg'),
                     alt: '05' 
                 }
-            ]            
+            ],
+            images: [
+                    require("~/assets/images/project01/image01.jpg"),
+                    require("~/assets/images/project01/image02.jpg"),
+                    require("~/assets/images/project01/image03.jpg"),
+                    require("~/assets/images/project01/image04.jpg"),
+                    require("~/assets/images/project01/image05.jpg")
+
+                ],                        
         }
     }
 }
