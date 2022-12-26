@@ -27,6 +27,21 @@
                 @include font($base-font,18px,$font-weight-1,30px);
                 color: $black-900;
             }
-        }   
+        }  
+        &--block {
+            margin-top: 70px;
+        } 
+        &--steps {
+            h4 {
+                @include font($base-font,24px,$font-weight-3,30px);
+                color: $black-1000;
+                margin-bottom: 20px;
+            }
+            p {
+                @include font($base-font,18px,$font-weight-1,30px);
+                color: $black-900;
+            }
+
+        }
     }
 }
