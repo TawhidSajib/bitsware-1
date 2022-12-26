@@ -84,7 +84,6 @@
 <script>
 
 import VueMasonryWall from "vue-masonry-wall";
-
 import Nav from '~/components/Nav';
 import Footer from '~/components/Footer';
 import banner from '~/assets/images/project01/01.jpg';
@@ -118,7 +117,7 @@ export default {
                     image: python,
                     alt: 'Python'
                 }
-            ],
+            ],         
             items: [
                 { 
                     image: require('@/assets/images/project01/image01.jpg'),
